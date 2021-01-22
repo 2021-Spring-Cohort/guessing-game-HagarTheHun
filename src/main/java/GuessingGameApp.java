@@ -7,6 +7,8 @@ public class GuessingGameApp {
         int guess = keyboard.nextInt();
         if (guess == 7) {
             System.out.println("You won the Guessing Game!");
+        } else if( guess == 0) {
+            System.out.println("Oh you don't know how to play? Guess a number 1-10.");
         } else {
             System.out.println("You are bad a guessing. You lost.");
         }
