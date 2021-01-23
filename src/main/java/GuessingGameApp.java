@@ -14,8 +14,10 @@ public class GuessingGameApp {
                 win = true;
             } else if( guess == 0) {
                 System.out.println("Oh you don't know how to play? Guess a number 1-10.");
+                guess = keyboard.nextInt();
             } else {
                 System.out.println("You are bad a guessing. You lost.");
+                guess = keyboard.nextInt();
             }
         }
 
