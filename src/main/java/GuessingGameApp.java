@@ -40,6 +40,9 @@ public class GuessingGameApp {
                     System.out.println("Oh you don't know how to play? Guess an int.");
                     //guess = keyboard.nextInt();
                     break;
+                case -1:
+                     guessCount = 5; //quit program
+                    break;
                 default:
                     System.out.println("Wrong answer!");
                     //guess = keyboard.nextInt();
