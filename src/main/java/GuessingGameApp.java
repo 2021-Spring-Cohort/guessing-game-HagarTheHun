@@ -6,10 +6,10 @@ public class GuessingGameApp {
 
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-        int guess = keyboard.nextInt();
+        int guess; //= keyboard.nextInt();
         boolean win = false;
         int guessCount = 0;
-        int
+
 //        while (!win) {
 //            if (guessCount>1) {
 //                System.out.println("Game over!");
@@ -29,9 +29,24 @@ public class GuessingGameApp {
 //                guess = keyboard.nextInt();
 //            }
 //            guessCount++;
-        switch (guess) {
-            case
+        while (!win && guessCount<2) {
+            guess = keyboard.nextInt();
+            switch (guess) {
+                case 7:
+                    win = true; // you got the right answer
+                    System.out.println("You won the Guessing Game!");
+                    break;
+                case 0:
+                    System.out.println("Oh you don't know how to play? Guess an int.");
+                    //guess = keyboard.nextInt();
+                    break;
+                default:
+                    System.out.println("Wrong answer!");
+                    //guess = keyboard.nextInt();
+                    guessCount++;
+            }
         }
+
 
 
     }
