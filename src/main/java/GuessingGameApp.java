@@ -45,8 +45,13 @@ public class GuessingGameApp {
                     break;
                 default:
                     System.out.println("Wrong answer!");
+                    if (7>guess) {
+                        System.out.println("The answer is a little higher!");
+                    } else {
+                    System.out.println("The answer is a little lower!");
+                }
                     //guess = keyboard.nextInt();
-                    guessCount++;
+                guessCount++;
             }
         }
 
